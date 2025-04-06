@@ -1,4 +1,8 @@
-import { DashboardOutlined, ProductOutlined, SettingOutlined } from '@ant-design/icons';
+import {
+  DashboardOutlined,
+  ProductOutlined,
+  SettingOutlined,
+} from '@ant-design/icons';
 import { Route } from 'react-router-dom';
 
 export const routes = [
@@ -9,7 +13,7 @@ export const routes = [
     element: <div>欢迎</div>,
   },
   {
-    path: '/list',
+    path: '/product-list',
     name: '产品',
     icon: <ProductOutlined />,
     element: <div>产品</div>,
@@ -29,9 +33,9 @@ export const routes = [
 ];
 
 export const renderRoutes = (routes: any[]) => {
-  return routes.map(route => {
+  return routes.map((route) => (
     <Route key={route.path} path={route.path} element={route.element}>
       {route.routes && renderRoutes(route.routes)}
-    </Route>;
-  });
+    </Route>
+  ));
 };
