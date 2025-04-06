@@ -1,9 +1,10 @@
+import { Route } from 'react-router-dom';
 import {
   DashboardOutlined,
   ProductOutlined,
   SettingOutlined,
 } from '@ant-design/icons';
-import { Route } from 'react-router-dom';
+import { NotFound } from '@/views/404';
 
 export const routes = [
   {
@@ -28,7 +29,7 @@ export const routes = [
     path: '/*',
     name: '404',
     hideInMenu: true,
-    element: <div>404 Not Found</div>,
+    element: <NotFound />,
   },
 ];
 

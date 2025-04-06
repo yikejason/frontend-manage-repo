@@ -11,7 +11,7 @@ export const App = () => {
       title="启优后台管理"
       logo="https://procomponents.ant.design/favicon.ico"
       route={{
-        path: '/',
+        path: '/dashborard',
         routes,
       }}
       contentStyle={{ padding: 0 }}
