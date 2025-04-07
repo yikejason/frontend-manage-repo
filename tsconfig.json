@@ -1,12 +1,18 @@
 {
   "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["./src/*"]
-    }
-  },
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+      "@/*": ["src/*"]
+    },
+    "strict": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  }
 }

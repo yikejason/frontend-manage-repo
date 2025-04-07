@@ -7,16 +7,16 @@ import {
 } from '@ant-design/icons';
 
 // 404 page
-const NotFoundPage = lazy(() => import('../views/404'));
+const NotFoundPage = lazy(() => import('@/views/404'));
 
 // dashboard page
-const DashboardPage = lazy(() => import('../views/dashboard'));
+const DashboardPage = lazy(() => import('@/views/dashboard'));
 
 // product page
-const ProductPage = lazy(() => import('../views/product'));
+const ProductPage = lazy(() => import('@/views/product'));
 
 // setting page
-const SettingPage = lazy(() => import('../views/setting'));
+const SettingPage = lazy(() => import('@/views/setting'));
 
 export const routes = [
   {
