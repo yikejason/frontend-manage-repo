@@ -1,0 +1,149 @@
+// 重置table组件样式
+.ant-table-thead > tr > th {
+  background: #f3f7ff !important;
+  white-space: pre !important;
+}
+.ant-table-cell {
+  padding-left: 24px !important;
+  padding-right: 8px !important;
+}
+.ant-table-cell::before {
+  background-color: #dbe5f8 !important;
+}
+//内容过多以...显示
+.ellipsisText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+.ant-table-cell-scrollbar:not([rowspan]) {
+  box-shadow: none !important;
+}
+.table-minwidth.ant-table-cell {
+  min-width: 120px !important;
+  padding-left: 9px !important;
+  padding-right: 13px !important;
+}
+.table-minwidth.defTitle.ant-table-cell {
+  min-width: 140px !important;
+}
+.ant-table-cell-fix-right.table-minwidth.ant-table-cell {
+  min-width: 65px !important;
+  text-align: center !important;
+}
+.table-minwidth.order.ant-table-cell {
+  min-width: 80px !important;
+}
+.table-minwidth.langTitle.ant-table-cell {
+  min-width: 165px !important;
+}
+.ant-table-cell-fix-right.table-minwidth.langTitle.ant-table-cell {
+  min-width: 135px !important;
+  text-align: center !important;
+}
+.table-minwidth.superLangTitle.ant-table-cell {
+  min-width: 190px !important;
+}
+.table-minwidth.ellipsis.ant-table-cell {
+  max-width: 300px !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+}
+.table-minwidth.ellipsis.isNumber.ant-table-cell {
+  max-width: 202px !important;
+}
+.headSearch.isDate.ant-table-cell {
+  min-width: 188px !important;
+}
+.headSearch.isDate.isDateTime.ant-table-cell {
+  min-width: 230px !important;
+}
+.headSearch {
+  img {
+    width: 16px;
+    height: auto;
+  }
+  .anticon-calendar {
+    font-size: 12px !important;
+  }
+  & > .ant-table-filter-column {
+    & > .ant-dropdown-trigger {
+      display: none;
+    }
+  }
+
+  .ant-input-affix-wrapper {
+    display: flex !important;
+  }
+  .ant-select-selection-item {
+    height: 22px !important;
+    line-height: 20px !important;
+    margin-top: 1px !important;
+    padding-left: 4px !important;
+  }
+  .ant-select-selection-item-content {
+    font-size: 12px !important;
+    max-width: 48px !important;
+  }
+  .ant-picker {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    min-width: 100% !important;
+    height: 28px;
+    .ant-picker-clear {
+      right: 2px !important;
+    }
+  }
+  .ant-picker-input {
+    input {
+      font-size: 12px !important;
+    }
+  }
+  .ant-picker-range-separator {
+    padding: 0 2px !important;
+    .ant-picker-separator {
+      font-size: 12px !important;
+    }
+  }
+  .ant-input-number {
+    width: 100% !important;
+  }
+  .ant-picker-range {
+    font-size: 12px !important;
+  }
+  .ant-select-selector {
+    padding-right: 14px !important;
+    height: 28px !important;
+    font-size: 13px !important;
+    padding: 1px 4px 1px 1px !important;
+  }
+}
+th.headSearch {
+  padding: 1px 12px 0 5px !important;
+}
+.ant-table-cell {
+  .ant-select-selector {
+    padding-right: 14px !important;
+    height: 28px !important;
+    font-size: 13px !important;
+  }
+  .ant-select-clear {
+    right: 6px !important;
+  }
+  .ant-input-affix-wrapper {
+    padding: 3px 6px !important;
+    font-size: 13px !important;
+  }
+  .ant-btn-link {
+    padding: 0 !important;
+  }
+  .ant-input-number-input {
+    font-size: 13px !important;
+    height: 27px !important;
+  }
+  .ant-picker-range-separator {
+    color: rgba(0, 0, 0, 0.55) !important;
+  }
+}
