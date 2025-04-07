@@ -120,7 +120,7 @@ const api = async ({
   return res;
 };
 
-// 下载文件
+// file download
 export const downApi = async ({
   url,
   method = 'GET',
@@ -142,10 +142,7 @@ export const downApi = async ({
   const r = new FileReader();
   r.onload = function () {
     try {
-      // this.result为FileReader获取blob数据,如果返回报错信息,则是正确的json数据,JSON.parse会正常转换
-      //如果返回文件流,则JSON.parse时会报错,走catch代码块(进行正常的文件下载)
       const resData = JSON.parse(this.result as string);
-      //resData是后端返回的json数据
       if (resData.code !== '00000') {
         message.error(resData.msg);
         return;
@@ -164,7 +161,8 @@ export const downApi = async ({
   };
   r.readAsText(res);
 };
-// 下载图片
+
+// img download
 export const downImg = async ({
   url,
   method = 'GET',
@@ -186,7 +184,8 @@ export const downImg = async ({
   const blob = new Blob([res]);
   return window.URL.createObjectURL(blob);
 };
-// 不显示错误提示的api
+
+// no error for api
 export const apiNoMsg = async ({
   url,
   method = 'GET',
